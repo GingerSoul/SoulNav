@@ -1,0 +1,34 @@
+/****Nav Menu****/
+.soul-scroll-2-nav-menu-wrapper{
+    display: inline-block;
+    position: fixed;
+    left: 20px; 
+    top: 80px;
+    z-index: 9999999;
+}
+
+.soul-scroller-2-nav-menu-item{
+    list-style: none;
+}
+
+.soul-scroller-2-nav-menu-item a{
+    display: inline-block;
+}
+
+.soul-scroller-2-highlit-menu-item{
+    /*background: red;*/
+}
+
+.soul-scroller-2-highlit-menu-item a,
+.soul-scroller-2-highlit-menu-item a:focus{
+    text-decoration: underline;
+    color: #f3ec1a94;
+}
+
+/****Nav Buttons****/
+.soul-scroller-button-container{
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 9999999;
+}
