@@ -282,7 +282,7 @@ jQuery(document).ready(function($){
             // if we have a "previous" nav
             if(SoulScroller2.previousNav){
                 // navigate to it
-                SoulScroller2.animatedScroll = TweenMax.to(window, 0.5, {scrollTo: {y: previousNav.offset().top, onAutoKill: SoulScroller2.handleCanceledAnimation }, onStart: SoulScroller2.scrollStart, onComplete: SoulScroller2.scrollStop, ease:Power2.easeOut});
+                SoulScroller2.animatedScroll = TweenMax.to(window, 0.5, {scrollTo: {y: previousNav.offset().top, onAutoKill: SoulScroller2.handleCanceledAnimation }, onStart: SoulScroller2.scrollStart, onComplete: SoulScroller2.scrollStop, ease:Power4.easeOut});
             }
 
             // adjust the list of stored navs to reflect the move upwards
@@ -316,7 +316,7 @@ jQuery(document).ready(function($){
             // if we have a "next" nav
             if(nextNav.length > 0){
                 // navigate to it
-                SoulScroller2.animatedScroll = TweenMax.to(window, 0.5, {scrollTo: {y:nextNav.offset().top, onAutoKill: SoulScroller2.handleCanceledAnimation}, ease:Power2.easeOut, onStart: SoulScroller2.scrollStart, onComplete: SoulScroller2.scrollStop});
+                SoulScroller2.animatedScroll = TweenMax.to(window, 0.5, {scrollTo: {y:nextNav.offset().top, onAutoKill: SoulScroller2.handleCanceledAnimation}, ease:Power4.easeOut, onStart: SoulScroller2.scrollStart, onComplete: SoulScroller2.scrollStop});
             }
 
             // adjust the list of stored navs to reflect the move downwards
@@ -547,7 +547,7 @@ jQuery(document).ready(function($){
             
             if(navElement && navElement.length > 0){
                 // navigate to it
-                SoulScroller2.animatedScroll = TweenMax.to(window, 0.5, {scrollTo: {y:navElement.offset().top, onAutoKill: SoulScroller2.handleCanceledAnimation}, ease:Power2.easeOut, onStart: SoulScroller2.scrollStart, onComplete: SoulScroller2.scrollStop});
+                SoulScroller2.animatedScroll = TweenMax.to(window, 0.5, {scrollTo: {y:navElement.offset().top, onAutoKill: SoulScroller2.handleCanceledAnimation}, ease:Power4.easeOut, onStart: SoulScroller2.scrollStart, onComplete: SoulScroller2.scrollStop});
 
                 // remove any existing nav highlight classes
                 $('.soul-scroller-2-highlit-menu-item').removeClass('soul-scroller-2-highlit-menu-item');
