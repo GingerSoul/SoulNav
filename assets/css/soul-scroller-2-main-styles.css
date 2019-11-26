@@ -19,7 +19,8 @@
     /*background: red;*/
 }
 
-.soul-scroller-2-highlit-menu-item a{
+.soul-scroller-2-highlit-menu-item a,
+.soul-scroller-2-highlit-menu-item a:focus{
     text-decoration: underline;
     color: #f3ec1a94;
 }

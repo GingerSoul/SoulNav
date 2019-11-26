@@ -5,7 +5,7 @@
  * Description: ...
  * Author:		Soul Plugins
  * Author URI:	URI: https://soulplugins.co
- * Version:		0.8
+ * Version:		0.8.1
  * Text Domain: soul-scroller-2
  * Domain Path: /assets/lang/
  */
