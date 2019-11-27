@@ -13,6 +13,7 @@ jQuery(document).ready(function($){
         waitingForButtonCooldown: false,
         waitingForScrollStop: null,
         animatedScroll: null,
+        animationSpeed: 0.5, // animation speed in seconds. Can be decimal
         
         /**
          * Initializes the SoulScroller2 element navigation system
@@ -327,7 +328,7 @@ jQuery(document).ready(function($){
             // if we have a "next" nav
             if(doNav){
                 // navigate to it
-                SoulScroller2.animatedScroll = TweenMax.to(window, 0.5, {scrollTo: {y:$(SoulScroller2.storedNavs[SoulScroller2.animationTargetNavId]).offset().top, autoKill: false, /*onAutoKill: SoulScroller2.handleCanceledAnimation*/}, ease:Power4.easeOut, onStart: SoulScroller2.scrollStart, onComplete: SoulScroller2.scrollStop});
+                SoulScroller2.animatedScroll = TweenMax.to(window, SoulScroller2.animationSpeed, {scrollTo: {y:$(SoulScroller2.storedNavs[SoulScroller2.animationTargetNavId]).offset().top, autoKill: false, /*onAutoKill: SoulScroller2.handleCanceledAnimation*/}, ease:Power4.easeOut, onStart: SoulScroller2.scrollStart, onComplete: SoulScroller2.scrollStop});
 
                 // output where we're going
                 //console.log('Animating up to index: ' + SoulScroller2.animationTargetNavId);
@@ -367,7 +368,7 @@ jQuery(document).ready(function($){
             // if we have a "next" nav
             if(doNav){
                 // navigate to it
-                SoulScroller2.animatedScroll = TweenMax.to(window, 0.5, {scrollTo: {y:$(SoulScroller2.storedNavs[SoulScroller2.animationTargetNavId]).offset().top, autoKill: false/*onAutoKill: SoulScroller2.handleCanceledAnimation*/}, ease:Power4.easeOut, onStart: SoulScroller2.scrollStart, onComplete: SoulScroller2.scrollStop});
+                SoulScroller2.animatedScroll = TweenMax.to(window, SoulScroller2.animationSpeed, {scrollTo: {y:$(SoulScroller2.storedNavs[SoulScroller2.animationTargetNavId]).offset().top, autoKill: false/*onAutoKill: SoulScroller2.handleCanceledAnimation*/}, ease:Power4.easeOut, onStart: SoulScroller2.scrollStart, onComplete: SoulScroller2.scrollStop});
 
                 // output where we're going
                 //console.log('Animating down to index: ' + SoulScroller2.animationTargetNavId);
@@ -479,7 +480,7 @@ jQuery(document).ready(function($){
             
             if(navElement && navElement.length > 0){
                 // navigate to it
-                SoulScroller2.animatedScroll = TweenMax.to(window, 0.5, {scrollTo: {y:navElement.offset().top, onAutoKill: SoulScroller2.handleCanceledAnimation}, ease:Power2.easeOut, onStart: SoulScroller2.scrollStart, onComplete: SoulScroller2.scrollStop});
+                SoulScroller2.animatedScroll = TweenMax.to(window, SoulScroller2.animationSpeed, {scrollTo: {y:navElement.offset().top, onAutoKill: SoulScroller2.handleCanceledAnimation}, ease:Power2.easeOut, onStart: SoulScroller2.scrollStart, onComplete: SoulScroller2.scrollStop});
 
                 // remove any existing nav highlight classes
                 $('.soul-scroller-2-highlit-menu-item').removeClass('soul-scroller-2-highlit-menu-item');
